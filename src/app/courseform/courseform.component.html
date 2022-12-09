@@ -1,0 +1,6 @@
+<form>
+    <input placeholder="ID" type="text" #cid/>
+    <input placeholder="NAME" type="text" #cname/>
+    <input placeholder="INSTRUCTOR" type="text" #cinstructor/>
+    <input type="button" value="Add Course" (click)= "formAddCourse(cid.value, cname.value, cinstructor.value); cid.value= ''; cinstructor.value= '';cname.value='';">
+</form>
